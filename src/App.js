@@ -4,6 +4,7 @@ import Creators from './components/Creators';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import MarketPlaces from './components/MarketPlaces';
+import CursorEffectComponent from './components/CursorEffectComponent';
 
 import Navbar from './components/Navbar';
 import { useSmoothScroll } from './hooks/useSmoothScroll';
@@ -14,7 +15,8 @@ const App = () => {
     <div>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<CursorEffectComponent/>}/>
+        <Route path='/home' element={<Home/>}/>
         <Route path='/marketplace' element={<MarketPlaces/>}/>
         <Route path='/creators' element={<Creators />}/>
       </Routes>

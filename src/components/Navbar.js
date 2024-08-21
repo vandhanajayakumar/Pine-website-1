@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavListAnimated } from '../hooks/gsap';
+import './CursorEffectComponent.css';
 
 
 const Navbar = () => {
@@ -17,27 +18,38 @@ const Navbar = () => {
     useNavListAnimated(listArr)
 
     return (
+        <>
+        <h1></h1>
         <div className='wrapper'>
+                {/* <div className="cursor"></div> */}
             <nav className="navbar">
                 <div className="logo" ref={logoRef}>
-                    <Link to="/">NFT</Link>
+                    <Link to="/">PINESPHERE</Link>
                 </div>
                 <ul className="nav-links">
+            
                     <li ref={list1}>
-                       <Link to="/marketplace">MarketPlace</Link>
+                       <Link to="/marketplace">Why Us</Link>
                     </li>
                     <li ref={list2}>
-                    <Link to="/">Activity</Link>
+                    <Link to="/home">About Us</Link>
                     </li>
                     <li ref={list3}>
-                    <Link to="/creators">Creator</Link>
+                    <Link to="/creators">Services</Link>
+                    </li>
+                    <li >
+                    <Link to="/creators">Products</Link>
+                    </li>
+                    <li >
+                    <Link to="/creators">Careers</Link>
                     </li>
                 </ul>
                 <div className="wallet" ref={walletRef}>
-                <Link to="/">Connect Wallet</Link>
+                <Link to="/">Contact Us</Link>
                 </div>
             </nav>
         </div>
+        </>
     );
 };
 

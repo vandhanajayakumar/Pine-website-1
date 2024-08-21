@@ -27,13 +27,13 @@ const Hero = () => {
     <section className="hero" ref={heroInfoRef}>
       <div className="hero-info">
         <div className="hero-left" ref={heroLeftRef}>
-          <h2>The Premier Marketplace for NFTs</h2>
+          <h2>Empowering cust with Excellence </h2>
           <p>
-            Nifty Gateway is the premier marketplace for Nifties, which are
-            digital items you can truly own. Digital Items have existed for a
-            long time, but never like this.
+          Our unwavering goal is to provide our esteemed customers with nothing short of excellence.With our cutting-edge technical solutions and meticulous attention to detail, we strive to surpass expectations and deliver the absolute best. Contact us today to experience the pinnacle of technological innovation
+
+
           </p>
-          <Link to="/" ref={buttonRef}>Learn More</Link>
+          <Link to="/" ref={buttonRef}>Know  More</Link>
         </div>
         <div className="hero-right photos">
           <div className="photo one"style={{backgroundImage: 'url("https://res.cloudinary.com/coin-nft/image/upload/c_limit%2Cq_auto%2Cw_329/f_auto/v1/cache/1/b9/1e/b91e2b95bdd8f6b47811b292696d7e2eed21392e0d3fb35f8e8104151fb60da8-NjQ1MTA2MmEtZWM4MC00MGQ2LTllNjUtYWYwNDhkYjkwZDZl?_a=ATCkFAA0")'}} ref={photo1}></div>

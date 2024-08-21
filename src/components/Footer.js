@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <section className="footer">
             <footer className="wrapper">
-                <p>Get us in touch with us to get your content on Nifty Gateway!</p>
+                {/* <p>Get us in touch with us to get your content on Nifty Gateway!</p> */}
             </footer>
         </section>
     );

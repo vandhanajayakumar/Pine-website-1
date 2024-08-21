@@ -1,0 +1,141 @@
+/* src/CursorEffectComponent.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  cursor: none; /* Hide mouse cursor */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2.5rem;
+  z-index: 100;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.logo a {
+  font-size: 2rem;
+  color: #FFA500; /* Directly use orange color */
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li + li {
+  margin-left: 1rem;
+}
+
+nav li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  border: 2px solid #FFA500; /* Directly use orange color */
+  color: #FFA500; /* Directly use orange color */
+  border-radius: 2rem;
+}
+
+.hero-text {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: black;
+}
+
+.hero-text h1 {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 700;
+  background-color: #FFA500; /* Directly use orange color */
+  background-image: linear-gradient(62deg, #FFA500 0%, #F7CE68 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-text h2 {
+  font-size: 4rem;
+  color: white;
+  display: inline-flex;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2.5rem;
+  color: #FFA500; /* Directly use orange color */
+}
+
+.footer-wrapper {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav li + li {
+  margin-left: 1rem;
+}
+
+.footer-nav li a {
+  color: #FFA500; /* Directly use orange color */
+  font-size: 1.1rem;
+}
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 2px solid #FFA500; /* Directly use orange color */
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.grow, .grow-small {
+  transform: scale(4);
+  background: white;
+  mix-blend-mode: difference;
+  border: none;
+}
+
+.grow-small {
+  transform: scale(2);
+}
